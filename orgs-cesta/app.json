@@ -9,6 +9,7 @@
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
+      }
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -21,7 +22,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/splash.png",
         "backgroundColor": "#FFFFFF"
       }
     },
@@ -29,4 +30,4 @@
       "favicon": "./assets/favicon.png"
     }
   }
-}
+

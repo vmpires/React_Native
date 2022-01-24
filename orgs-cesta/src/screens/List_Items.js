@@ -1,5 +1,7 @@
 import React from 'react';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { FlatList, StyleSheet, View } from 'react-native';
+import DefaultText from '../components/Text'
+
 
 const styles = StyleSheet.create({
     container: {
@@ -7,15 +9,14 @@ const styles = StyleSheet.create({
         paddingLeft: 75,
     },
     item: {
-        color: "#A2A2A2",
+        color: "#9C0D0D",
         padding: 10,
         fontSize: 18,
         height: 60,
-        fontFamily: "MontserratRegular",
       },
   });
 
-export default function Lista_Items() {
+export default function List_Items() {
   return (
         <View style={styles.container}>
 
@@ -26,9 +27,9 @@ export default function Lista_Items() {
             {key: 'Jogar'},
             {key: 'Comer'},
             {key: 'Namorar'},
-            {key: 'Cochilo'},
+            {key: 'Cochilar'},
             ]}
-            renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
+            renderItem={({item}) => <DefaultText style={styles.item}>{item.key}</DefaultText>}
         />
         </View>
   );

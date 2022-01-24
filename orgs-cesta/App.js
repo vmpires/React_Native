@@ -1,8 +1,10 @@
 import React from 'react';
 import { StatusBar, SafeAreaView, View } from 'react-native';
-import Header from './src/screens/Header';
-import Lista_Items from './src/screens/Lista_Items';
+import List_Header from './src/screens/List_Header';
+import List_Items from './src/screens/List_Items';
 import {useFonts, MontserratAlternates_400Regular, MontserratAlternates_700Bold } from '@expo-google-fonts/montserrat-alternates'
+import AppLoading from 'expo-app-loading';
+import mock from "./src/mocks/list"
 
 export default function App() {
   const [defaultfont] = useFonts({
@@ -11,14 +13,14 @@ export default function App() {
   });
 
   if (!defaultfont){
-    return <View />
+    return <AppLoading />
   }
 
   return (
     <SafeAreaView>
       <StatusBar/>
-      <Header/>
-      <Lista_Items/>
+      <List_Header {...mock}/>
+      <List_Items/>
     </SafeAreaView>
   );
 }
