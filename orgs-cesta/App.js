@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar, SafeAreaView, View } from 'react-native';
+import { StatusBar, SafeAreaView } from 'react-native';
 import List_Header from './src/screens/List_Header';
 import List_Items from './src/screens/List_Items';
 import {useFonts, MontserratAlternates_400Regular, MontserratAlternates_700Bold } from '@expo-google-fonts/montserrat-alternates'
@@ -20,7 +20,7 @@ export default function App() {
     <SafeAreaView>
       <StatusBar/>
       <List_Header {...mock}/>
-      <List_Items/>
+      <List_Items {...mock}/>
     </SafeAreaView>
   );
 }

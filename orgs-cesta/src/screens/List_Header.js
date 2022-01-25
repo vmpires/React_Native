@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, StyleSheet, Dimensions, Text, View, FlatList } from 'react-native';
+import { Image, StyleSheet, Dimensions, View} from 'react-native';
 import DefaultText from '../components/Text'
 
 import top from "../../assets/top-image.png"
